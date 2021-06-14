@@ -33,8 +33,8 @@ export const Button = styled.button`
   font-size: 1.4rem;
   background: transparent;
   border: 1px solid var(..light);
-  border-color: ${(props) => (props.cart ? 'var(--Crimson)' : 'var(..light)')};
-  color: ${(prop) => (prop.cart ? 'var(--Crimson)' : 'var(..light)')};
+  border-color: ${(props) => (props.cart ? 'var(--crimson)' : 'var(..light)')};
+  color: ${(prop) => (prop.cart ? 'var(--crimson)' : 'var(..light)')};
   color: var(--light);
   border-radius: 0.5rem;
   cursor: pointer;
@@ -42,7 +42,7 @@ export const Button = styled.button`
   margin: 0.2rem 0.5rem 0.2re 0;
   transition: all 0.5s ease-in-out;
   &:hover {
-    background: ${(prop) => (prop.cart ? 'var(--Crimson)' : 'var(..light)')};
+    background: ${(prop) => (prop.cart ? 'var(--crimson)' : 'var(..light)')};
     color: var(--main);
   }
   &:focus {
@@ -98,5 +98,21 @@ export const ProductWrapper = styled.div`
   .cart-btn:hover {
     color: var(--main);
     cursor: pointer;
+  }
+`;
+
+export const ModalContainer = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-item: center;
+  justify-content: center;
+  #modal {
+    background: var(--subMain);
+    margin-top: 50px;
   }
 `;

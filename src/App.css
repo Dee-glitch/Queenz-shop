@@ -1,22 +1,21 @@
 :root {
   --main: #aa3939;
   --light: #d46a6a;
-  --mainWhite: #ffaaaa;
-  --Dark: #550000;
-  --Crimson: #d67488;
+  --subMain: #ffaaaa;
+  --dark: #550000;
+  --crimson: #d67488;
 }
 
 body {
-  font-family: 'Open Sans Condensed';
+  font-family: 'Oswald', sans-serif !important;
+  background: var(--subMain) !important;
+  color: var(--dark) !important;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
-
-* {
-  box-sizing: border-box;
+.text-title {
+  font-family: 'Permanent Marker', cursive;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
 }
 
 .text-main {
@@ -30,5 +29,25 @@ a {
 .cart-icon {
   cursor: pointer;
   font-size: 1.2rem;
-  color: var(--Yellow);
+  color: var(--crimson);
+}
+
+.btn-black {
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem !important;
+  color: var(--dark);
+  border-radius: 0 !important;
+  border: 01rem solid var(--dark) !important;
+}
+
+.btn-black:hover {
+  background: var(--dark) !important;
+  color: var(--mainWhite) !important;
+}
+
+.cart-icon {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--crimson);
 }

@@ -21,6 +21,7 @@ const Product = (props) => {
             disabled={inCart ? true : false}
             onClick={() => {
               product.addToCart(id);
+              product.openModal(id);
             }}
           >
             {inCart ? (

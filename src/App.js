@@ -5,8 +5,9 @@ import { ProductProvider } from './context/Context';
 import { Navbar } from './components/Navbar';
 import ProductList from './components/ProductList';
 import Details from './components/Details';
-import Cart from './components/Cart';
+import Cart from './components/Cart/Cart';
 import Default from './components/Default';
+import Modal from './components/Modal';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/cart" component={Cart} />
             <Route component={Default} />
           </Switch>
+          <Modal />
         </Router>
       </ProductProvider>
     </>

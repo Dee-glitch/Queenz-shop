@@ -113,7 +113,7 @@ export const ModalContainer = styled.div`
   bottom: 0;
   background: rgba(0, 0, 0, 0.3);
   display: flex;
-  align-item: center;
+  align-items: center;
   justify-content: center;
   #modal {
     background: var(--subMain);

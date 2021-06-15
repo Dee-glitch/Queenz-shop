@@ -8,6 +8,7 @@ import Details from './components/Details';
 import Cart from './components/Cart/Cart';
 import Default from './components/Default';
 import Modal from './components/Modal';
+import Signup from './components/Signup';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route exact path="/" component={ProductList} />
             <Route path="/details" component={Details} />
             <Route path="/cart" component={Cart} />
+            <Route path="/signup" component={Signup} />
             <Route component={Default} />
           </Switch>
           <Modal />

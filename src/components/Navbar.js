@@ -18,6 +18,9 @@ export const Navbar = () => {
         <OptionLink to="/" className="nav-link">
           Products
         </OptionLink>
+        <Link to="/signup" className="nav-link">
+          sign up
+        </Link>
         <Link to="/cart" className="ml-auto">
           <Button>
             <span className="mr-2">

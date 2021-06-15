@@ -32,9 +32,9 @@ export const Button = styled.button`
   text-transform: capitalize;
   font-size: 1.4rem;
   background: transparent;
-  border: 1px solid var(..light);
-  border-color: ${(props) => (props.cart ? 'var(--crimson)' : 'var(..light)')};
-  color: ${(prop) => (prop.cart ? 'var(--crimson)' : 'var(..light)')};
+  border: 1px solid var(--light);
+  border-color: ${(props) => (props.cart ? 'var(--crimson)' : 'var(--light)')};
+  color: ${(prop) => (prop.cart ? 'var(--crimson)' : 'var(--light)')};
   color: var(--light);
   border-radius: 0.5rem;
   cursor: pointer;
@@ -42,7 +42,7 @@ export const Button = styled.button`
   margin: 0.2rem 0.5rem 0.2re 0;
   transition: all 0.5s ease-in-out;
   &:hover {
-    background: ${(prop) => (prop.cart ? 'var(--crimson)' : 'var(..light)')};
+    background: ${(prop) => (prop.cart ? 'var(--crimson)' : 'var(--light)')};
     color: var(--main);
   }
   &:focus {

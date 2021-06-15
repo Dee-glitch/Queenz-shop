@@ -117,6 +117,5 @@ export const ModalContainer = styled.div`
   justify-content: center;
   #modal {
     background: var(--subMain);
-    margin-top: 50px;
   }
 `;

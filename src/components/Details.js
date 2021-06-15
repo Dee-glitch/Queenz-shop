@@ -17,7 +17,12 @@ const Details = () => {
       </div>
       <div className="row">
         <div className="col-10 mx-auto col-md-6 my-3">
-          <img src={imgUrl} className="img-fluid detail-img" alt="product" />
+          <img
+            src={imgUrl}
+            className="img-fluid detail-img"
+            alt="product"
+            style={{ marginLeft: '100px' }}
+          />
         </div>
         <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
           <h4>

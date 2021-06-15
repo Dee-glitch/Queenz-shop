@@ -1,8 +1,8 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
 
-const config = {
-  apiKey: 'AIzaSyA5dUzFCQTe0hZ3T9qcsd92Nr_QqL5J',
+var config = {
+  apiKey: 'AIzaSyA5dUzFCQTe0hZ3T9qcsd92Nr_QqL5JZv4',
   authDomain: 'queenzz.firebaseapp.com',
   projectId: 'queenzz',
   storageBucket: 'queenzz.appspot.com',

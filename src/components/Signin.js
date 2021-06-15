@@ -1,18 +1,18 @@
 import { useState } from 'react';
 import { signInWithGoogle } from '../firebase';
 import { Form, Button, Card, Container } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
-const Signin = ({ emailSignInStart }) => {
+const Signin = () => {
   const [userCredentials, setCredentials] = useState({
     email: '',
     password: '',
   });
-  const { email, password } = userCredentials;
+  const history = useHistory();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // emailSignInStart(email, password);
+    history.push('/');
   };
 
   const handleChange = (e) => {
@@ -32,11 +32,15 @@ const Signin = ({ emailSignInStart }) => {
             <Form onSubmit={handleSubmit}>
               <Form.Group id="email">
                 <Form.Label>Email</Form.Label>
-                <Form.Control type="email" Label={email} required />
+                <Form.Control type="email" required />
               </Form.Group>
               <Form.Group id="password">
                 <Form.Label>Password</Form.Label>
-                <Form.Control type="password" label={password} required />
+                <Form.Control
+                  type="password"
+                  onChange={handleChange}
+                  required
+                />
               </Form.Group>
               <Button className="w-100 mt-2" type="submit">
                 Sign In
@@ -45,7 +49,6 @@ const Signin = ({ emailSignInStart }) => {
                 className="w-100 mt-2"
                 type="submit"
                 onClick={signInWithGoogle}
-                isGoogleSignIn
               >
                 Sign in with Google
               </Button>

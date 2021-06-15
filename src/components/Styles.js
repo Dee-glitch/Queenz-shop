@@ -43,7 +43,7 @@ export const Button = styled.button`
   border-radius: 0.5rem;
   cursor: pointer;
   padding: 0.2rem 0.5rem;
-  margin: 0.2rem 0.5rem 0.2re 0;
+  margin: 0.2rem 0.5rem 0.2rem 0;
   transition: all 0.5s ease-in-out;
   &:hover {
     background: ${(prop) => (prop.cart ? 'var(--crimson)' : 'var(--light)')};
@@ -113,7 +113,7 @@ export const ModalContainer = styled.div`
   bottom: 0;
   background: rgba(0, 0, 0, 0.3);
   display: flex;
-  align-item: center;
+  align-items: center;
   justify-content: center;
   #modal {
     background: var(--subMain);

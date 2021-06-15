@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { auth } from '../firebase';
 import logo from '../../src/logo.svg';
 import {
   Button,
@@ -8,7 +9,7 @@ import {
   OptionLink,
 } from './Styles';
 
-export const Navbar = () => {
+export const Navbar = ({ currentUser }) => {
   return (
     <NavContainer>
       <LogoContainer to="/">
@@ -18,9 +19,15 @@ export const Navbar = () => {
         <OptionLink to="/" className="nav-link">
           Products
         </OptionLink>
-        <Link to="/signup" className="nav-link">
-          sign up
-        </Link>
+        {currentUser ? (
+          <div className="nav-link" onClick={() => auth.signOut()}>
+            Sign out
+          </div>
+        ) : (
+          <OptionLink to="/signin" className="nav-link">
+            Sign in
+          </OptionLink>
+        )}
         <Link to="/cart" className="ml-auto">
           <Button>
             <span className="mr-2">

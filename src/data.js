@@ -1,11 +1,11 @@
 export const storeProducts = [
   {
     id: 1,
-    title: 'Brown Brim Hat',
+    title: 'Nike Air Force',
     imgUrl:
       'https://images.unsplash.com/photo-1579338559194-a162d19bf842?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
-    price: 25,
-    Brand: 'Zara',
+    price: 85,
+    Brand: 'Nike',
     info: 'Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.',
     inCart: false,
     count: 0,
@@ -13,11 +13,11 @@ export const storeProducts = [
   },
   {
     id: 2,
-    title: 'Palm Tree Cap',
+    title: 'Worker Boots',
     imgUrl:
-      'https://images.unsplash.com/photo-1572969565371-acc5b2b3496a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80',
-    price: 16,
-    Brand: 'SissyBoy',
+      'https://images.unsplash.com/photo-1605812860427-4024433a70fd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80',
+    price: 160,
+    Brand: 'CAT',
     info: 'Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.',
     inCart: false,
     count: 0,
@@ -25,11 +25,11 @@ export const storeProducts = [
   },
   {
     id: 3,
-    title: 'Adidas Yeezy',
+    title: 'Air Force Mid',
     imgUrl:
       'https://images.unsplash.com/photo-1584735174914-6b1272458e3e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
-    price: 8,
-    Brand: 'Adidas',
+    price: 90,
+    Brand: 'Nike',
     info: 'Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.',
     inCart: false,
     count: 0,
@@ -40,7 +40,7 @@ export const storeProducts = [
     title: 'Utility jacket',
     imgUrl:
       'https://images.unsplash.com/photo-1544022613-e87ca75a784a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
-    price: 18,
+    price: 68,
     Brand: 'Zara',
     info: 'Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.',
     inCart: false,
@@ -49,10 +49,10 @@ export const storeProducts = [
   },
   {
     id: 5,
-    title: 'Air Jordan Limited',
+    title: 'Air Jordan',
     imgUrl:
       'https://images.unsplash.com/photo-1597045566677-8cf032ed6634?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80',
-    price: 24,
+    price: 120,
     Brand: 'Nike',
     info: 'Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.',
     inCart: false,
@@ -61,10 +61,11 @@ export const storeProducts = [
   },
   {
     id: 6,
-    title: 'Black Jean Shearling',
-    imgUrl: 'https://i.ibb.co/XzcwL5s/black-shearling.png',
-    price: 17,
-    Brand: 'SissyBoy',
+    title: 'Nike Athletic',
+    imgUrl:
+      'https://images.unsplash.com/photo-1611080028152-8f14b0078f9e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80',
+    price: 55,
+    Brand: 'Nike',
     info: 'Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.',
     inCart: false,
     count: 0,

@@ -7,6 +7,7 @@ const ProductList = () => {
   return (
     <div className="py-5">
       <div className="container">
+        <h1 className="title">Our Products</h1>
         <div className="row">
           {product.products.map((item) => {
             return <Product key={item.id} product={item} />;

@@ -14,12 +14,10 @@ import Signin from './components/Signin';
 
 function App() {
   const [currentUser, setCurrentUser] = useState();
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
       setCurrentUser(user);
-      setLoading(false);
     });
 
     return unsubscribe;

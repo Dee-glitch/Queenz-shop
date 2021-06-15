@@ -15,10 +15,10 @@ const Signin = () => {
     history.push('/');
   };
 
-  const handleChange = (e) => {
-    const { value, name } = e.target;
-    setCredentials({ ...userCredentials, [name]: value });
-  };
+  // const handleChange = (e) => {
+  //   const { value, name } = e.target;
+  //   setCredentials({ ...userCredentials, [name]: value });
+  // };
 
   return (
     <Container
@@ -36,11 +36,7 @@ const Signin = () => {
               </Form.Group>
               <Form.Group id="password">
                 <Form.Label>Password</Form.Label>
-                <Form.Control
-                  type="password"
-                  onChange={handleChange}
-                  required
-                />
+                <Form.Control type="password" required />
               </Form.Group>
               <Button className="w-100 mt-2" type="submit">
                 Sign In

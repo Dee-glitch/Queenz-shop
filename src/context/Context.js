@@ -3,7 +3,7 @@ import { storeProducts, detailProduct } from '../data';
 
 const ProductContext = createContext();
 
-function ProductProvider(props) {
+const ProductProvider = (props) => {
   const [products, setProducts] = useState([]);
   const [productDetail, setProductDetail] = useState(detailProduct);
   const [cart, setCart] = useState([]);
@@ -17,8 +17,6 @@ function ProductProvider(props) {
     setTempProducts();
   }, []);
 
-  //copy the values from the original array to a temp Array so that fresh set of original values can be extracted whenever required.
-  //Pass the values not references to the values, passing by referencing the objects may change the original value.
   const setTempProducts = () => {
     let tempProducts = [];
     storeProducts.forEach((item) => {
@@ -145,6 +143,6 @@ function ProductProvider(props) {
       {props.children}
     </ProductContext.Provider>
   );
-}
+};
 
 export { ProductProvider, ProductContext };

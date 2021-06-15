@@ -1,17 +1,19 @@
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { Form, Button, Card, Alert, Container } from 'react-bootstrap';
-//import { useAuth } from '../context/AuthContext';
-//import { AuthProvider } from '../context/AuthContext';
 import { Link, useHistory } from 'react-router-dom';
+//import { auth } from '../firebase';
 
 export default function Signup() {
   const emailRef = useRef();
   const passwordRef = useRef();
   const passwordConfirmRef = useRef();
-  //const { signup } = useAuth();
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const history = useHistory();
+
+  // function signup(email, password) {
+  //   return auth.createUserWithEmailAndPassword(email, password);
+  // }
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -41,7 +43,6 @@ export default function Signup() {
         <Card>
           <Card.Body>
             <h2 className="text-center mb-4">Sign Up</h2>
-            {error && <Alert variant="danger">{error}</Alert>}
             <Form onSubmit={handleSubmit}>
               <Form.Group id="email">
                 <Form.Label>Email</Form.Label>

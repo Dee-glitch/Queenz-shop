@@ -10,7 +10,7 @@ const Product = (props) => {
     <ProductWrapper className="col-9 mx-auto col-md-6 col-lg-3 my-3">
       <div className="card">
         <div
-          className="img-container p-5"
+          className="img-container p-0"
           onClick={() => product.handleDetail(id)}
         >
           <Link to="/details">

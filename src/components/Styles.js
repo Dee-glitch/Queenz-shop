@@ -7,6 +7,10 @@ export const NavContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
+  .nav-link {
+    color: #550000;
+    font-weight: 500;
+  }
 `;
 
 export const LogoContainer = styled(Link)`

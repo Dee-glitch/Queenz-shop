@@ -13,6 +13,8 @@ var config = {
 firebase.initializeApp(config);
 
 export const auth = firebase.auth();
+export const signInWithEmailAndPassword = () =>
+  auth.createUserWithEmailAndPassword(provider);
 const provider = new firebase.auth.GoogleAuthProvider();
 provider.setCustomParameters({ prompt: 'select_account' });
 export const signInWithGoogle = () => auth.signInWithPopup(provider);

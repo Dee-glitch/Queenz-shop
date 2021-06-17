@@ -10,6 +10,7 @@ export const NavContainer = styled.div`
   .nav-link {
     color: #550000;
     font-weight: 500;
+    cursor: pointer;
   }
 `;
 

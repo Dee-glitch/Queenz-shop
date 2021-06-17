@@ -27,16 +27,22 @@ const Signin = () => {
       <div className="w-100" style={{ maxWidth: '400px' }}>
         <Card>
           <Card.Body>
-            <h2 className="text-center mb-4">Log In</h2>
+            <h2 className="text-center mb-4">Sign In</h2>
             <Form onSubmit={handleSubmit}>
               <Form.Group id="email">
                 <Form.Label>Email</Form.Label>
-                <Form.Control type="email" required />
+                <Form.Control
+                  type="email"
+                  name="email"
+                  onChange={handleChange}
+                  required
+                />
               </Form.Group>
               <Form.Group id="password">
                 <Form.Label>Password</Form.Label>
                 <Form.Control
                   type="password"
+                  name="password"
                   onChange={handleChange}
                   required
                 />

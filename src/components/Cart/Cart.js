@@ -11,7 +11,7 @@ function Cart(props) {
   if (product.cart.length > 0) {
     return (
       <div>
-        <h1>Your Cart</h1>
+        <h1 className="text-center">Your Cart</h1>
         <CartColumns />
         <CartList value={product} />
         <CartTotals value={product} history={props.history} />
